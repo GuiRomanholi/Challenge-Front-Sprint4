@@ -1,0 +1,70 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+    
+    .navBar {
+        @apply top-0 left-0 w-full h-24 bg-gray-200 z-50 flex justify-between items-center px-5;
+    }
+
+    .logo img {
+        @apply h-12 ml-2;
+    }
+
+    .menu {
+        @apply flex items-center;
+    }
+
+    .menu ul {
+        @apply list-none flex items-center m-0 p-0;
+    }
+
+    .menu li {
+        @apply mx-2;
+    }
+
+    .menu li a {
+        @apply text-blue-700 hover:text-blue-500 px-5 py-2 text-base rounded;
+    }
+
+    .menu li.login a {
+        @apply bg-blue-500 text-white hover:bg-blue-700 px-5 py-2 rounded;
+    }
+}
+
+@media (max-width: 979px) {
+    .navBar {
+        @apply flex-col h-auto p-2;
+    }
+
+    .logo img {
+        @apply mt-2;
+    }
+
+    .menu {
+        @apply w-full justify-center mt-2;
+    }
+
+    .menu ul {
+        @apply flex-col w-full items-center;
+    }
+
+    .menu li {
+        @apply my-1 w-full text-center;
+    }
+
+    .menu li a {
+        @apply w-full text-center text-lg py-2;
+    }
+}
+
+@media (max-width: 576px) {
+    .navBar {
+        padding: 10px;
+    }
+
+    .menu li a {
+        font-size: 1rem;
+    }
+}
