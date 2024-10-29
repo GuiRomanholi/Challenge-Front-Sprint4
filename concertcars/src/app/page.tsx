@@ -37,7 +37,7 @@ export default function Home() {
               </div>
           </div>
       </section>
-      <article className='article'>
+      <article className='h-article'>
           <h2>O que é o Consert Cars?</h2>
           <p>Somos uma aplicação móvel inovador que utiliza tecnologia de ponta para simplificar e aprimorar a maneira como os usuários lidam com problemas em seus veículos. Utilizando inteligência artificial, via chatbot, ajuda os usuários a relatar problemas em seus carros e solicitar serviços de guincho de forma rápida e eficiente.</p>
       </article>

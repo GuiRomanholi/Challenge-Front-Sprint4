@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .faq-section {
+        @apply flex justify-center items-center pt-[150px];
+    }
+
+    .faq-section img {
+        @apply w-[30%];
+    }
+
+    .faq-article {
+        @apply flex flex-col justify-center items-center text-center mt-[7%] mx-[10%];
+    }
+
+    .faq-article h1 {
+        @apply text-[#414040] text-xl;
+    }
+
+    .faq-article p {
+        @apply text-[#808080] w-[50%] p-[0.5%] ml-[4%] text-lg;
+    }
+
+    .faq-article hr {
+        @apply w-[80%] border-gray-500 mt-5 mb-5;
+    }
+}
