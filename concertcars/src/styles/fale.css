@@ -1,0 +1,151 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .fl-section1 {
+        @apply flex flex-wrap justify-between items-center pt-[170px] px-[10%];
+    }
+
+    .fl-headline {
+        @apply flex-1 mr-8;
+    }
+
+    .fl-headline h1 {
+        @apply font-semibold text-[#414040] text-[50px] m-0 p-0;
+    }
+
+    .fl-headline p {
+        @apply text-left leading-[1.6] text-[#808080] max-w-full;
+    }
+
+    .fl-imgHeadline {
+        @apply flex-1 text-right;
+    }
+
+    .fl-imgHeadline img {
+        @apply max-w-full h-auto;
+    }
+
+    .fl-section2 {
+        @apply bg-[#e6e6e6] flex flex-col items-start py-[5%] px-[10%];
+    }
+
+    .fl-email, .fl-whats {
+        @apply flex flex-wrap items-center mb-8;
+    }
+
+    .fl-textEmail, .fl-textWhats {
+        @apply ml-4 text-left text-lg;
+    }
+
+    .fl-section2 h2 {
+        @apply m-0 text-[#414040] text-xl;
+    }
+
+    .fl-section2 p {
+        @apply mt-4 text-[#414040];
+    }
+
+    .fl-article {
+        @apply text-center justify-center my-[5%] mx-[10%];
+    }
+
+    .fl-article h2 {
+        @apply text-[30px] text-[#414040];
+    }
+
+    .fl-article p {
+        @apply text-[#808080] w-[70%] ml-[15%] leading-[1.6];
+    }
+}
+
+@media (max-width: 992px) {
+    .fl-section1 {
+        @apply flex-col text-center;
+    }
+
+    .fl-headline {
+        @apply mr-0 mb-8;
+    }
+
+    .fl-headline h1 {
+        @apply text-2xl;
+    }
+
+    .fl-headline p {
+        @apply text-lg;
+    }
+
+    .fl-imgHeadline {
+        @apply text-center;
+    }
+
+    .fl-section2 {
+        @apply px-[8%];
+    }
+
+    .fl-email, .fl-whats {
+        @apply ml-0 justify-center;
+    }
+}
+
+@media (max-width: 768px) {
+    .fl-headline h1 {
+        @apply text-xl;
+    }
+
+    .fl-headline p {
+        @apply text-base;
+    }
+
+    .fl-section2 h2 {
+        @apply text-2xl;
+    }
+
+    .fl-email, .fl-whats {
+        @apply flex-col items-center text-center;
+    }
+
+    .fl-textEmail, .fl-textWhats {
+        @apply ml-0;
+    }
+
+    .fl-article h2 {
+        @apply text-[1.875rem];
+    }
+
+    .fl-article p {
+        @apply w-[90%] ml-[5%];
+    }
+}
+
+@media (max-width: 576px) {
+    .fl-headline h1 {
+        @apply text-lg;
+    }
+
+    .fl-headline p {
+        @apply text-sm;
+    }
+
+    .fl-imgHeadline img {
+        @apply w-[80%] mx-auto;
+    }
+
+    .fl-section2 {
+        @apply px-[5%];
+    }
+
+    .fl-section2 h2 {
+        @apply text-xl;
+    }
+
+    .fl-article h2 {
+        @apply text-xl;
+    }
+
+    .fl-article p {
+        @apply w-full ml-0;
+    }
+}
