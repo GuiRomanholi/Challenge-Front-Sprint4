@@ -4,7 +4,7 @@
 
 @layer components{
     .nf-div1{
-        @apply flex flex-col items-center justify-center min-h-screen bg-gradient-to-r from-blue-600 to-blue-700 text-white p-4;
+        @apply flex flex-col items-center justify-center min-h-screen bg-gradient-to-r from-blue-300 to-blue-600 text-white p-4;
     }
 
     .nf-h1{
