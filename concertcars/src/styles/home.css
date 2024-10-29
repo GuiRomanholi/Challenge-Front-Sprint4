@@ -40,7 +40,7 @@
     }
 
     .servicos {
-        @apply mt-5 flex flex-wrap justify-center;
+        @apply flex flex-wrap justify-center m-10;
     }
 
     .card {

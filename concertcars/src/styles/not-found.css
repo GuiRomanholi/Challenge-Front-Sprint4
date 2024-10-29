@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+    .nf-div1{
+        @apply flex flex-col items-center justify-center min-h-screen bg-gradient-to-r from-blue-600 to-blue-700 text-white p-4;
+    }
+
+    .nf-h1{
+        @apply text-9xl font-bold animate-bounce;
+    }
+
+    .nf-h2{
+        @apply text-2xl md:text-4xl font-semibold mt-4;
+    }
+
+    .nf-p{
+        @apply text-lg md:text-xl mt-2 opacity-80 text-center max-w-md;
+    }
+
+    .nf-a{
+        @apply mt-8 px-6 py-3 bg-white text-blue-700 font-semibold rounded-md shadow-lg hover:bg-gray-200 transition-colors duration-200;
+    }
+
+}
