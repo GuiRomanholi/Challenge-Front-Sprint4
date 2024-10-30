@@ -4,7 +4,7 @@
 
 @layer components{
     .section1 {
-        @apply flex flex-col lg:flex-row justify-between items-center pt-40;
+        @apply flex flex-col lg:flex-row justify-between items-center pt-40 ml-10;
     }
 
     .headline {

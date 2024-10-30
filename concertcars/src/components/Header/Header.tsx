@@ -8,7 +8,7 @@ export default function Header() {
             <nav className='navBar'>
                 <div className='logo'>
                     <Link href="/">
-                        {<Image src="/img/logo_ccs.png" alt="Logo_Concert" width={200} height={200}/>}
+                        {<Image src="/img/logo_ccs.png" alt="Logo_Concert" width={190} height={50}/>}
                     </Link>
                 </div>
                 <div className='menu'>
