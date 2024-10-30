@@ -22,17 +22,17 @@ export default function Home() {
           <div className='servicos'>
               <div className='card'>
                 {<Image src="/img/icone_relatorio_azul.png" alt="foto_relarotio_azul" width={100} height={100}/>}
-                  <h3>Relatórios de problemas</h3>
+                  <h3><strong>Relatórios de problemas</strong></h3>
                   <p>Os usuários podem descrever os problemas encontrados em seus veículos através de <strong>texto, voz ou até mesmo fotos</strong>. O <strong> sistema de IA </strong> analisa as informações fornecidas e oferece sugestões ou soluções preliminares.</p>
               </div>
               <div className='card'>
                 {<Image src="/img/icone_gps_azul.png" alt="icon_gps_azul" width={100} height={100}/>}
-                  <h3>Localização GPS</h3>
+                  <h3><strong>Localização GPS</strong></h3>
                   <p>O aplicativo utiliza a <strong> localização GPS do dispositivo móvel </strong> do usuário para identificar sua localização exata. Isso permite que o serviço, em caso de guincho, seja despachado para o local correto com rapidez e precisão.</p>
               </div>
               <div className='card'>
                 {<Image src="/img/icone_oficina_azul.png" alt="foto_oficina_azul" width={100} height={100}/>}
-                  <h3>Parceria com oficinas</h3>
+                  <h3><strong>Parceria com oficinas</strong></h3>
                   <p>O App interage com uma <strong> rede de oficinas mecânicas e serviços de guincho parceiros</strong>. O sistema pode sugerir oficinas próximas com base na localização do usuário e na disponibilidade de serviços necessários.</p>
               </div>
           </div>
