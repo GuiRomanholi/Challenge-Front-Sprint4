@@ -8,34 +8,34 @@ export default function Cadastro() {
         <h2>Cadastro</h2>
         <input
             type="text"
-            name="txtName"
-            id="idName"
+            name="txtCpf"
+            id="idCpf"
             className='ca-inputField'
-            placeholder="Insira seu nome"
+            placeholder="CPF"
             required
         />
         <input
             type="text"
-            name="txtConfirmName"
-            id="idConfirmName"
+            name="txtConfirmNome"
+            id="idConfirmNome"
             className='ca-inputField'
-            placeholder="Confirme seu nome"
+            placeholder="Nome"
             required
         />
         <input
-            type="password"
-            name="txtPassword"
-            id="idPassword"
+            type="text"
+            name="txtEmail"
+            id="idEmail"
             className='ca-inputField'
-            placeholder="Insira sua senha"
+            placeholder="Email"
             required
         />
         <input
-            type="password"
-            name="txtConfirmPassword"
-            id="idConfirmPassword"
+            type="text"
+            name="txtConfirmTelefone"
+            id="idConfirmTelefone"
             className='ca-inputField'
-            placeholder="Confirme sua senha"
+            placeholder="Telefone"
             required
         />
         <button type="submit" className='ca-submitButton'>Cadastrar</button>
