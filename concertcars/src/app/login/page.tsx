@@ -35,7 +35,6 @@ export default function Login() {
             onClick={toggleCpfVisibility}
             className="lo-eyeIcon absolute right-3 top-3 cursor-pointer text-gray-600"
           >
-            {showCpf ? "🔓" : "🔒"}
           </span>
         </div>
 
