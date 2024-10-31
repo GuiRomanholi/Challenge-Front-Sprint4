@@ -11,6 +11,9 @@ export const metadata: Metadata = {
 export default function RootLayout({ children,}: Readonly<{ children: React.ReactNode;}>) {
   return (
     <html lang="pt-br">
+      <head>
+        <link rel="shortcut icon" href="/icon_concert.svg" type="image/svg+xml" />
+      </head>
       <body>
         <Header/>
         {children}

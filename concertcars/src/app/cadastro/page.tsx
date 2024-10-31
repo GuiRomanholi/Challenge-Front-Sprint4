@@ -1,11 +1,13 @@
 "use client";
 import Link from 'next/link';
+import { useRouter } from 'next/navigation';
 import React, { useState, FormEvent } from 'react';
 
 export default function Cadastro() {
   const [loading, setLoading] = useState<boolean>(false);
   const [error, setError] = useState<string | null>(null);
   const [success, setSuccess] = useState<boolean>(false);
+  const navigate = useRouter();
 
   const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
@@ -40,8 +42,9 @@ export default function Cadastro() {
       const data = await response.json();
       setSuccess(true);
       console.log('Cliente cadastrado com sucesso:', data);
-    } catch (error: any) {
-      setError(error.message);
+      navigate.push('/login')
+    } catch (error) {
+      setError("Deu Erro" + error);
       console.error('Falha na gravação:', error);
     } finally {
       setLoading(false);

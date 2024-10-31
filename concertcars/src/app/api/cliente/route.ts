@@ -35,8 +35,8 @@ export async function POST(request: Request) {
         const data = await response.json();
         return NextResponse.json(data, { status: 201 });
 
-    } catch (error: any) {
-        console.error("Erro na função POST:", error.message || error);
-        return NextResponse.json({ error: "Falha na gravação: " + error.message }, { status: 500 });
+    } catch (error) {
+        console.error("Erro na função POST:", error);
+        return NextResponse.json({ error: "Falha na gravação: " + error }, { status: 500 });
     }
 }

@@ -30,14 +30,16 @@ export default function Login() {
       }
 
       const cliente = await response.json();
-      if (cliente) {
+      if (cliente.cpf != null) {
+
         setSuccess('Acesso liberado!');
         console.log('Cliente encontrado:', cliente);
+
       } else {
         throw new Error('Cliente não encontrado');
       }
-    } catch (err: any) {
-      setError(err.message);
+    } catch (err) {
+      setError("Erro" + err);
       console.error('Erro ao tentar acessar:', err);
     }
   };
