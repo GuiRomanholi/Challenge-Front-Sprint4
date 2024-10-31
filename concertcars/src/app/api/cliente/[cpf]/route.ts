@@ -5,17 +5,13 @@ interface baseParams {
     cpf: string
 }
 
-// Definindo um tipo que encapsula `params`
 interface RouteContext {
     params: Promise<baseParams>;
 }
 
-export async function GET(
-  request: Request,
-  { params }: RouteContext // Definindo `params` dentro de `RouteContext`
-) {
+export async function GET(  request: Request,  { params }: RouteContext) {
   try {
-    const cpf = (await params).cpf; // Acessando `cpf` dentro de `params`
+    const cpf = (await params).cpf;
     if (!cpf) {
       return NextResponse.json({ error: "CPF não fornecido." }, { status: 400 });
     }
