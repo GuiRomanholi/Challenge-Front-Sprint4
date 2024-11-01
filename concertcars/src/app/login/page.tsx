@@ -1,8 +1,10 @@
 "use client";
 import Link from 'next/link';
 import { useState } from 'react';
+import { useRouter } from 'next/navigation';
 
 export default function Login() {
+  const router = useRouter();
   const [showCpf, setShowCpf] = useState<boolean>(false);
   const [cpf, setCpf] = useState<string>('');
   const [error, setError] = useState<string | null>(null);
@@ -19,11 +21,11 @@ export default function Login() {
 
     try {
       const response = await fetch(`/api/cliente/${cpf}`, {
-      method: 'GET',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-    });
+        method: 'GET',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+      });
 
       if (!response.ok) {
         throw new Error('CPF não encontrado ou erro ao acessar a API');
@@ -31,15 +33,15 @@ export default function Login() {
 
       const cliente = await response.json();
       if (cliente.cpf != null) {
-
         setSuccess('Acesso liberado!');
         console.log('Cliente encontrado:', cliente);
-
+        
+        router.push(`/chatbot/${cpf}`);
       } else {
         throw new Error('Cliente não encontrado');
       }
     } catch (err) {
-      setError("Erro" + err);
+      setError("Erro: " + err);
       console.error('Erro ao tentar acessar:', err);
     }
   };
