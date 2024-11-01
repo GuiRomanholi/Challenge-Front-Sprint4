@@ -55,7 +55,7 @@ export default function Cadastro() {
     <div className='ca-registerContainer'>
       <form id="form-register" className='ca-registerForm' onSubmit={handleSubmit}>
         <h2>Cadastro</h2>
-        <input type="text" name="txtCpf" id="idCpf" className='ca-inputField' placeholder="CPF" required />
+        <input type="text" name="txtCpf" id="idCpf" className='ca-inputField' maxLength={11} placeholder="CPF" required />
         <input type="text" name="txtConfirmNome" id="idConfirmNome" className='ca-inputField' placeholder="Nome" required />
         <input type="email" name="txtEmail" id="idEmail" className='ca-inputField' placeholder="Email" required />
         <input type="tel" name="txtConfirmTelefone" id="idConfirmTelefone" className='ca-inputField' placeholder="Telefone" required />
