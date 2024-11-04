@@ -4,3 +4,4 @@ export type TipoCliente = {
     telefone:string;
     email:string;
 }
+
