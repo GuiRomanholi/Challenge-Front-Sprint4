@@ -2,7 +2,7 @@ import Link from 'next/link';
 import React from 'react'
 
 export default function NotFound() {
-    return (
+      return (
         <div className='nf-div1'>
           <h1 className='nf-h1'>404</h1>
           <h2 className='nf-h2'>
