@@ -10,7 +10,7 @@
 
 ## Link para o vídeo
 
-link: https://www.youtube.com/watch?v=5WD1tS5cbHw
+link: https://www.youtube.com/watch?v=7OOj8UOQIBM
 
 # Projeto de Protótipo no Figma
 
