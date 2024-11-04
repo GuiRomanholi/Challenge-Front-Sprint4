@@ -42,5 +42,4 @@ export default function Home() {
       </article>
     </main>
   )
-
 }
