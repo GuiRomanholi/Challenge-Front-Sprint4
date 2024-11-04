@@ -8,21 +8,24 @@
 - Igor Werneck Jacobosque RM: 558395
 - Cristian Caja Rodrigues RM: 558502
 
-## Link para o vídeo
+## Links
 
-link: https://www.youtube.com/watch?v=7OOj8UOQIBM
+Link do video: https://www.youtube.com/watch?v=7OOj8UOQIBM
+
+Link da Vercel: https://challenge-front-sprint4.vercel.app/
+
+Link do figma: https://www.figma.com/design/kIeSv2r9V96nXgtUbxfN7T/Consert-Car%C2%B4s---Sprint-3?node-id=0-1&t=sHi49Z1KazC7DNNt-1
+
+Link Repositório de Java: https://github.com/GuiRomanholi/concertcars
+
+Obs: No Java não foi feito o deploy, então se atente a clonar o repositorio, e caso for olhar a URL de Java, é ideal que o nome do Endpoint seja:
+http://localhost:8080/concertcars/clientes
 
 # Projeto de Protótipo no Figma
 
 ## Descrição
 
 Este projeto é um protótipo criado no Figma, desenvolvido utilizando Next.js para a codificação e Tailwind para a estilização. O projeto inclui quatro páginas principais:
-
-link Repositório de Java: https://github.com/GuiRomanholi/concertcars
-
-link da Vercel: https://challenge-front-sprint4.vercel.app/
-
-link do figma: https://www.figma.com/design/kIeSv2r9V96nXgtUbxfN7T/Consert-Car%C2%B4s---Sprint-3?node-id=0-1&t=sHi49Z1KazC7DNNt-1
 
 - [x]  **Página Principal**
 - [x] **Sobre Nós**
