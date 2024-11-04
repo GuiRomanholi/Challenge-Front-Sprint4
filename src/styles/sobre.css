@@ -44,6 +44,10 @@
     .so-card {
         @apply w-[45%];
     }
+
+    .so-card img {
+        @apply w-[50%]
+    }
 }
 
 @media (max-width: 768px) {
