@@ -36,7 +36,7 @@
     }
 
     .so-card img {
-        @apply w-[80%] rounded-[10%] border-[3px] border-[#0874f8]; /* Ajuste a largura para 80% */
+        @apply w-[80%] rounded-[10%] border-[3px] border-[#0874f8];
     }
 }
 
